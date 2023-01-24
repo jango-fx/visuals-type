@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>Baselinegrid</title>
+    <!-- <scripx src="url"></scripx> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760');
+
+        html {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.2rem;
+            font-family: 'Roboto Flex', sans-serif;
+            font-stretch: 25%;
+            font-weight: 100;
+            font-optical-sizing: none;
+            
+        }
+
+        body{
+            margin: auto;
+            width: calc(3*13rem);
+        }
+
+        
+        #centerbox{
+            /* background-color: aqua; */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 11.5rem;
+        }
+
+        .container {
+            /* background-color: blueviolet; */
+            overflow: hidden;
+            height: 11.5rem;
+        }
+
+        .container div {
+            float: left;
+            vertical-align: baseline;
+            position: relative;
+            width: 13.0rem;
+        }
+
+
+        .full {
+            /* background-color: lightskyblue; */
+            line-height: 1.2rem;
+            font-size: 1rem;
+            top: 0.875rem;
+        }
+
+        .double {
+            /* background-color: lightgreen; */
+            line-height: 2.4rem;
+            font-size: 1.8rem;
+        }
+
+        .third {
+            /* background-color: lightcoral; */
+            line-height: 0.8rem;
+            font-size: 0.7rem;
+            top: 1.2rem;
+
+        }
+
+        .grid-container {
+            position: relative;
+            transform: translate(0, -10.84rem);
+            z-index: 1000;
+        }
+
+        .grid {
+            /* background-color: rgba(165, 42, 42, 0.14); */
+            width: calc(3*13rem);
+            height: 1.175rem;
+            border-bottom: 0.01rem solid hsla(215, 100%, 65%, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="centerbox">
+        <div class="container">
+            <div class="full">Das hier ist die erste Zeile.<br />Das hier ist die zweite Zeile.<br />Das hier ist die dritte Zeile.<br />Das hier ist die vierte Zeile.<br />Das hier ist die fünfte Zeile.<br />Das hier ist die sechste Zeile.<br />Das hier ist die siebte Zeile.<br />Das hier ist die achte Zeile.<br />Das hier ist die neunte Zeile.<br />Das hier ist die zehnte Zeile.<br />Das hier ist die elfte Zeile</div>
+            <div class="double">Jede zweite Zeile.<br />Jede zweite Zeile.<br />Jede zweite Zeile.<br />Jede zweite Zeile.<br />Jede zweite Zeile.<br />Jede zweite Zeile.</div>
+            <div class="third">Das hier ist die erste Zeile. Jede dritte trifft.<br />Das hier ist die zweite Zeile.<br />Das hier ist die dritte Zeile.<br />Das hier ist die vierte Zeile. Jede dritte trifft.<br />Das hier ist die fünfte Zeile.<br />Das hier ist die sechste Zeile.<br />Das hier ist die siebte Zeile. Jede dritte trifft.<br />Das hier ist die achte Zeile.<br />Das hier ist die neunte Zeile.<br />Das hier ist die zehnte Zeile. Jede dritte trifft.<br />Das hier ist die elfte Zeile.<br />Das hier ist die zwölfte Zeile.<br />Das hier ist die dreizehnte Zeile. Jede dritte trifft.<br />Das hier ist die vierzehnte Zeile.<br />Das hier ist die fünfzehnte Zeile.<br />Das hier ist die sechszehnte Zeile.</div>
+        </div>
+        <div class="grid-container">
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+        </div>
+    </div>
+</body>
+
+</html>
