@@ -9,18 +9,24 @@
       }
       .textbox {
         width: calc(50% - 200px);
-        padding: 100px;
+        margin: 50px;
+        padding: 50px;
+        background: rgba(0,0,0,0.04);
       }
       .justified {
         text-align: justify;
       }
       .hyphenated {
         hyphens: auto;
-        background: PaleGreen;
       }
       .unhyphenated {
         hyphens: none;
+      }
+      .wrong {
         background: Pink;
+      }
+      .right {
+        background: PaleGreen;
       }
     </style>
     <meta charset="UTF-8" />
@@ -30,19 +36,21 @@
   <body>
     <div style="display: flex">
       <div class="textbox unhyphenated">
-        Flattersatz bezeichnet in der Typografie eine Satzform, bei der die Zeilen ungleichmäßig auslaufen. 
-        In Spalten mit weniger als 40 Zeichen ist Flattersatz sinnvoller als Blocksatz.
+        Flattersatz bezeichnet in der Typografie eine Satzform, bei der die
+        Zeilen ungleichmäßig auslaufen. In Spalten mit weniger als 40 Zeichen
+        ist Flattersatz sinnvoller als Blocksatz.
       </div>
 
       <div class="textbox hyphenated">
-        Flattersatz bezeichnet in der Typografie eine Satzform, bei der die Zeilen ungleichmäßig auslaufen.
-        In Spalten mit weniger als 40 Zeichen ist Flattersatz sinnvoller als Blocksatz.
+        Flattersatz bezeichnet in der Typografie eine Satzform, bei der die
+        Zeilen ungleichmäßig auslaufen. In Spalten mit weniger als 40 Zeichen
+        ist Flattersatz sinnvoller als Blocksatz.
       </div>
     </div>
     <p></p>
     <div style="display: flex">
-      <div class="textbox justified unhyphenated">
-        Beim Blocksatz handelt es sich in der Typografie um die Methode, einen 
+      <div class="textbox justified unhyphenated wrong">
+        Beim Blocksatz handelt es sich in der Typografie um die Methode, einen
         Text so zu setzen, dass die Zeilen auf gleiche Breite gebracht werden.
         Dies geschieht meist durch Erweiterung der Wortzwischenräume. Dies kann
         aber – insbesondere bei sehr langen Worten wie z.B.
@@ -52,7 +60,7 @@
         Lücken im Text.
       </div>
 
-      <div class="textbox justified hyphenated">
+      <div class="textbox justified hyphenated right">
         Beim Blocksatz handelt es sich in der Typografie um die Methode, einen
         Text so zu setzen, dass die Zeilen auf gleiche Breite gebracht werden.
         Dies geschieht meist durch Erweiterung der Wortzwischenräume. Dies kann
